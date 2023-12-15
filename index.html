@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRTHDAY WISHER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+    <header> BIRTHDAY WISHER <div class="inputForm">
+            <form onsubmit="event.preventDefault(); updateCard();">
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" required>
+
+                <label for="note"> <b>Birthday Note:</b></label>
+                <textarea id="note" required></textarea>
+
+                <label for="wisherName"><b>Your Name (Wisher's Name):</b></label>
+                <input type="text" id="wisherName" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </header>
+
+
+
+
+
+    <div class="birthdayCard" style="display: none;">
+        <div class="cardFront">
+
+
+            <h3 class="happy">HAPPY BIRTHDAY <span class="name"></span></h3>
+            <div class="balloons">
+                <div class="balloon-1"></div>
+                <div class="balloon-2"></div>
+                <div class="balloon-3"></div>
+                <div class="balloon-4"></div>
+            </div>
+
+            <div id="circle">
+                <h5> TAP HERE TO OPEN!!! </h5>
+            </div>
+
+        </div>
+
+
+        <div class="cardInside">
+
+            <h3 class="back">HAPPY BIRTHDAY <span class="name"></span></h3>
+            <p> Dear <span class="name"></span>,
+            <p class="note"></p>
+            </p>
+            <div> <img id="pngs"
+                    src="https://static.vecteezy.com/system/resources/previews/019/806/987/original/birthday-cake-graphic-clipart-design-free-png.png"
+                    alt=""></div>
+
+
+
+            <span>
+                <p class="wisher_name"></p>
+            </span>
+        </div>
+    </div>
+    <footer> Desgined And Developed By guvvadichandu@2023 All copy rights reserved </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+ 
